@@ -2025,7 +2025,7 @@ export abstract class FileSystem implements ISerializableFileSystem
         {
             new Workflow()
                 .each(Object.keys(tree), (name, cb) => {
-                    const value = tree[name];
+                    const value: string|Buffer|ResourceType = tree[name];
                     const childPath = rootPath.getChildPath(name);
                     if(value.constructor === ResourceType || value.constructor === String || value.constructor === Buffer)
                     {
