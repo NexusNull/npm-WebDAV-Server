@@ -21,7 +21,7 @@
     "virtual"
   ],
   "scripts": {
-    "postinstall": "npm run build",
+    "postinstall": "pwd && ls",
     "prepare": "npm run build",
     "dev": "cd src && tsc --declaration -w",
     "build": "cd src && tsc --declaration",
