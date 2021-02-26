@@ -40,7 +40,6 @@
   },
   "description": "WebDAV Server",
   "dependencies": {
-    "jsonwebtoken": "^8.5.1",
     "mime-types": "^2.1.18",
     "xml-js-builder": "^1.0.3"
   },
